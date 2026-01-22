@@ -1,0 +1,95 @@
+Project Name: FinSight AI
+
+Create a professional full-stack web application called “FinSight AI” for Indian stock market analysis.
+
+IMPORTANT REQUIREMENTS (DO NOT SKIP):
+- This must be a FULL-STACK project with BOTH frontend and backend code.
+- Backend code must be fully visible and editable (Node.js + Express).
+- Frontend must consume backend APIs (no mock-only frontend).
+- The project must run correctly using:
+  - npm install
+  - npm run dev
+- The project must work both in Replit and after downloading and running locally in VS Code.
+- Use clear folder separation for frontend and backend.
+- Add beginner-friendly comments in the code.
+
+PROJECT SCOPE:
+- Support ONLY Indian stock markets (NSE/BSE).
+- Do NOT include US or international stock markets.
+- The app is for educational and analytical purposes only (not financial advice).
+
+CORE FEATURES:
+
+1) Stock Search
+- Allow users to search for Indian companies by name or ticker (example: RELIANCE, TCS, INFY).
+- Validate input to ensure only Indian stocks are processed.
+
+2) Historical Data Analysis
+- Fetch up to 10 years of historical stock price data for Indian stocks using a public/free data source.
+- Backend should handle data fetching and processing.
+- Frontend should never directly fetch raw market data.
+
+3) Interactive Price Chart (Google Finance–style)
+- Display an interactive stock price chart similar to Google Finance.
+- Provide selectable timeframes:
+  - 1D
+  - 1M
+  - 3M
+  - 6M
+  - 1Y
+  - 5Y
+- When a user clicks a timeframe, the chart must update dynamically to show ONLY that period’s data.
+- Use a clean, professional charting library.
+
+4) Fundamental Metrics Section
+Display key stock fundamentals when available:
+- Market Capitalization
+- P/E Ratio
+- EPS
+- Dividend Yield
+- 52-Week High and Low
+- Basic revenue or earnings summary (if available)
+
+5) AI-Based Analyst Outlook
+- Use simple AI or rule-based analysis on historical trends and indicators.
+- Provide one of the following recommendations:
+  - Buy
+  - Sell
+  - Watch / Hold
+- Include a short textual explanation explaining the reasoning.
+- This logic must be implemented in the backend.
+- Clearly label outputs as analytical insights, not investment advice.
+
+TECHNICAL STACK:
+- Backend: Node.js + Express
+- Frontend: React (Vite or similar)
+- Charts: Any stable JavaScript charting library
+- Styling: Clean, professional UI (no flashy demo styles)
+
+BACKEND REQUIREMENTS:
+- Create REST API endpoints such as:
+  - /api/search
+  - /api/stock/:symbol/history
+  - /api/stock/:symbol/fundamentals
+  - /api/stock/:symbol/analysis
+- Use environment variables (.env) for configuration.
+- Do NOT hardcode API keys.
+- Add basic error handling and clear API responses.
+
+FRONTEND REQUIREMENTS:
+- Clean dashboard-style UI.
+- Stock search bar at the top.
+- Chart displayed prominently.
+- Fundamentals and analyst outlook displayed in structured sections.
+- Handle loading and error states gracefully.
+
+PROJECT QUALITY:
+- Use meaningful variable and function names.
+- Add comments explaining important logic.
+- Ensure the app runs without errors on first run.
+- Keep the project professional and suitable for academic demonstration.
+
+DELIVERABLE:
+- A complete, working full-stack application.
+- All code must be visible, editable, and downloadable.
+- No hidden or platform-locked backend logic.
